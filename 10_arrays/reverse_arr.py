@@ -1,6 +1,9 @@
-nums = [1,2,3,5]
-
-for i in range(len(nums)):
-    for j in range(i, len(nums)):
-        print(i,j)
-
+def reverse(arr):
+    start, end = 0, len(arr) -1
+    while(start < end):
+        arr[start], arr[end] = arr[end], arr[start]
+        start += 1
+        end -= 1
+arr_input = [10, 20 , 99, 89, 50]
+reverse(arr_input)
+print(arr_input)
